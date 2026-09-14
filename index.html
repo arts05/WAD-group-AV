@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+    <section>
+        <h1>Profile</h1>
+        <div>
+            <figure>
+                <img src="res/images/me.png" width="128" height="128" alt="My picture">
+                <figcaption>My profile image</figcaption>
+            </figure>
+        </div>
+        <div>
+            <ul>
+                <li>Arthur Klettenberg</li>
+                <li>A date following this format dd/mm/yyyy</li>
+                <li>Software Engineering</li>
+            </ul>
+            <a href="mailto:arthur.klettenberg@ut.ee">Send me an e-mail</a>
+        </div>
+        <div>
+            <strong>2.65</strong>
+        </div>
+    </section>
+    <article>
+        <h2>Courses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <a title="Agiilse tarkvaraarenduse kursuse leht" target="_blank"
+                            href="https://courses.cs.ut.ee/2026/ASD/fall">Agile software development</a>
+                    </td>
+                    <td>fall</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <a title="Süsteemide modelleerimise kursuse leht" target="_blank"
+                            href="https://courses.cs.ut.ee/2026/systemsmodelling/fall">Systems
+                            modelling</a>
+                    </td>
+                    <td>fall</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <a title="Requirements Engineering kursuse leht" target="_blank"
+                            href="https://courses.cs.ut.ee/2026/RE/fall">Requirements Engineering</a>
+                    </td>
+                    <td>fall</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <a title="Inimese ja arvuti interaktsiooni kursuse leht" target="_blank"
+                            href="https://courses.cs.ut.ee/2026/HCI/fall">Human Computer Interaction</a>
+                    </td>
+                    <td>fall</td>
+                    <td>65</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+    <footer>
+        <ul>
+            <li>
+                <a target="_blank" href="https://ois2.ut.ee/">OIS</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://courses.cs.ut.ee/">Courses</a>
+            </li>
+        </ul>
+    </footer>
+    <form>
+        <label for="course_title">Course Title:</label><br>
+        <input type="text" id="course_title" name="course_title"><br>
+        <label for="semester">Semester:</label><br>
+        <select name="semester" id="semester">
+            <option value="fall">Fall</option>
+            <option value="spring">Spring</option>
+        </select>
+        <br>
+        <strong>Attendance:</strong>
+        <br>
+        <input type="radio" id="virtual" name="attendance" value="Virtual">
+        <label for="virtual">Virtual attendance</label><br>
+        <input type="radio" id="physical" name="attendance" value="Physical">
+        <label for="physical">Physical attendance</label><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
